@@ -1,92 +1,88 @@
-/* Polices */
-
-
-@font-face {
-
-    font-family: 'Raleway';
-    src: url('polices/Raleway-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 /* Eléments principaux de la page */
+
 
 
 body {
 
-    background-color: #F2F2F2;
-    font-family: 'Raleway', 'Trebuchet MS', Arial, sans-serif;
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
     color: black;
 }
 
 #bloc_page {
-    
+
     width: 992px;
     margin: auto;
 }
 
 h1 {
 
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
 }
 
 
 p {
 
-    font-size: 0.9em;
-    font-weight: bold;
-    color: #565252;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #a5a4a4;
 }
+
 
 
 /* Header */
 
 
+
 header {
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -15px;
-    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 6px;
 }
 
 header img {
 
     margin-left: 20px;
+    margin-top: 20px;
 }
 
+
+
 /* Navigation */
+
 
 
 nav ul {
 
     display: flex;
     list-style-type: none;
-    position: relative;
+    margin-right: 15px;
 }
 
 nav li {
 
-    padding-left: 60px;    
+    padding-left: 50px;
 }
 
 nav a {
-    
+
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: bold;
-    color: #565252;
+    color: #c0bfbf;
 }
 
 nav a:hover {
-    
-    color: #0065FC;
+
     border-top: 1px solid #0065FC;
-    padding-top:30px
+    padding-top: 30px;
+    border-bottom: none;
 }
+
 
 
 /* Section acceuil */
@@ -95,84 +91,281 @@ nav a:hover {
 
 #acceuil h1 {
 
-    margin-bottom: -8px;
+    margin-bottom: -6px;
 }
 
 #barre_de_recherche {
 
-    display:flex;
+    display: flex;
     align-items: center;
-    position: relative;
+    margin-top: 13px;
 }
 
-.map p {
+#filtre p {
+
+    font-size: 1em;
+}
+
+.bdr_map {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-left: 15px;
-    height: 33px;
-    width: 20px;
-    border: 1px solid #e0dede;
-    background-color: #e0dede;
+    height: 37px;
+    width: 21px;
+    background-color: #f5f5f5;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.icone_map {
+.bdr_map i {
 
-    position: absolute;
-    text-align: center;
-    padding-left: 11px;
+    padding-right: 14px;
+    font-size: 80%;
 }
 
-.localisation {
+.bdr_localisation {
 
+    font-family: 'Raleway', 'Trebuchet MS', Arial, sans-serif;
+    font-size: 0.8em;
     transition: box-shadow .3s;
     display: flex;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 11px;
     height: 33px;
-    width: 170px;
-    border: 1px solid #e0dede;
+    width: 145px;
+    border: 1px solid #f5f5f5;
 }
 
-.localisation a {
-    
-    text-decoration: none;
+.bdr_localisation::placeholder {
+
     color: black;
-    font-size: 0.9em;
+    font-weight: bold;
+    opacity: 1;
 }
 
-.localisation:hover {
+.bdr_localisation:hover {
 
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
-.rechercher {
-    
+.bdr_rechercher {
+
     transition: box-shadow .3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35px;
+    height: 37px;
     width: 100px;
     background-color: #0065FC;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.rechercher a {
+.bdr_rechercher a {
 
     text-decoration: none;
     color: white;
-    font-size: 0.9em;   
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
-.rechercher:hover {
+.bdr_rechercher:hover {
 
     background-color: #00d9ff;
 }
 
+#filtre {
+
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#filtre p {
+
+    color: black;
+}
+
+.filtre_bouton {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: auto;
+    border: 3px solid #f5f5f5;
+    border-radius: 100px 100px 100px 100px;
+    padding: 0px 15px 0px 49px;
+    margin-left: 19px;
+}
+
+.filtre_bouton a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 0.8em;
+}
+
+.filtre_bouton:hover {
+
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.1);
+}
+
+.filtre_logo {
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -3px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #deebff;
+}
+
+.filtre_logo i {
+
+    color: #0065FC;
+}
+
+#info {
+
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+
+#info p {
+
+    padding-left: 8px;
+}
+
+.info_logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52%;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #e6e5e5;
+    border-radius: 50%;
+}
+
+.info_logo i {
+
+    color: #0065FC;
+}
 
 
 
+/* Section hebergement */
+
+
+
+#hebergement {
+
+    margin-top: 15px;
+}
+
+#hebergement_marseille {
+
+    display: block;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #f5f5f5;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#hm_vignette {
+
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 18px;
+
+}
+
+.hm_hotel {
+
+    display: flex;
+    flex-direction: column;
+    padding: 4px 4px 4px 4px;
+    height: 96%;
+    width: 93%;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.hm_hotel img {
+
+    height: 87px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.hm_hotel h1 {
+
+    margin: 8px 0px -4px 6px;
+    font-size: 0.7em;
+}
+
+.hm_prix {
+
+    display: flex;
+    align-items: center;
+    margin: -2px 0px -14px 6px;
+}
+
+.hm_prix_en_gras {
+
+    font-weight: 600;
+    font-size: 0.7em;
+    margin-left: 3px;
+}
+
+.hm_prix_en_gras_2 {
+
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+.hm_etoile {
+
+    display: flex;
+    margin-left: 15px;
+    color: #0065FC;
+}
+
+.etoile_vide {
+
+    color: #d4d3d3;
+}
+
+.hm_hotel i {
+
+    font-size: 53%;
+    margin: 10px 0px -4px -10px;
+    padding-right: 11px;
+}
+
+.afficher_plus {
+
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.afficher_plus a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 0.8em;
+}
