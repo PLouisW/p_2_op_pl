@@ -1,371 +1,441 @@
-/* Eléments principaux de la page */
-
-
+/********** Eléments principaux de la page **********/
 
 body {
-
-    background-color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    color: black;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  color: black;
 }
 
 #bloc_page {
-
-    width: 992px;
-    margin: auto;
+  width: 992px;
+  margin: auto;
 }
 
 h1 {
-
-    font-size: 1em;
-    font-weight: bold;
+  font-size: 1em;
 }
 
+h2 {
+  font-size: 0.7em;
+}
 
 p {
-
-    font-size: 0.7em;
-    font-weight: 600;
-    color: #a5a4a4;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #a5a4a4;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 
-
-/* Header */
-
-
+/********************** Header **********************/
 
 header {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-header img {
-
-    margin-left: 20px;
-    margin-top: 20px;
+.logo_booki {
+  margin: 32px 0 0 2px;
 }
 
-
-
-/* Navigation */
-
-
+.logo_booki img {
+  width: 80px;
+  object-fit: cover;
+}
 
 nav ul {
-
-    display: flex;
-    list-style-type: none;
-    margin-right: 15px;
-}
-
-nav li {
-
-    padding-left: 50px;
+  display: flex;
+  list-style-type: none;
 }
 
 nav a {
-
-    text-decoration: none;
-    font-size: 0.7em;
-    font-weight: bold;
-    color: #c0bfbf;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #c0bfbf;
 }
 
 nav a:hover {
-
-    border-top: 1px solid #0065FC;
-    padding-top: 30px;
-    border-bottom: none;
+  color: #0065fc;
 }
 
+nav li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top: 1px solid white;
+  width: 120px;
+  height: 46px;
+  margin: -27px -17px 0px 25px;
+}
 
+nav li:hover {
+  border-top: 1px solid #0065fc;
+}
 
-/* Section acceuil */
-
-
+/***************** Section acceuil *****************/
 
 #acceuil h1 {
-
-    margin-bottom: -6px;
+  margin-bottom: -6px;
 }
 
 #barre_de_recherche {
-
-    display: flex;
-    align-items: center;
-    margin-top: 13px;
-}
-
-#filtre p {
-
-    font-size: 1em;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
 }
 
 .bdr_map {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 15px;
-    height: 37px;
-    width: 21px;
-    background-color: #f5f5f5;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  width: 36px;
+  background-color: #f5f5f5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .bdr_map i {
-
-    padding-right: 14px;
-    font-size: 80%;
+  font-size: 80%;
 }
 
 .bdr_localisation {
-
-    font-family: 'Raleway', 'Trebuchet MS', Arial, sans-serif;
-    font-size: 0.8em;
-    transition: box-shadow .3s;
-    display: flex;
-    align-items: center;
-    padding-left: 11px;
-    height: 33px;
-    width: 145px;
-    border: 1px solid #f5f5f5;
+  font-size: 0.8em;
+  padding-left: 11px;
+  height: 33px;
+  width: 145px;
+  border: 1px solid #f5f5f5;
 }
 
 .bdr_localisation::placeholder {
-
-    color: black;
-    font-weight: bold;
-    opacity: 1;
+  color: black;
+  font-weight: bold;
+  opacity: 1;
 }
 
+.bdr_localisation:focus,
 .bdr_localisation:hover {
-
-    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  outline: none;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .bdr_rechercher {
-
-    transition: box-shadow .3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 37px;
-    width: 100px;
-    background-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  width: 100px;
+  background-color: #0065fc;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .bdr_rechercher a {
-
-    text-decoration: none;
-    color: white;
-    font-size: 0.8em;
-    font-weight: bold;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 .bdr_rechercher:hover {
-
-    background-color: #00d9ff;
+  background-color: #00d9ff;
 }
 
 #filtre {
-
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#filtre p {
-
-    color: black;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .filtre_bouton {
-
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 32px;
-    width: auto;
-    border: 3px solid #f5f5f5;
-    border-radius: 100px 100px 100px 100px;
-    padding: 0px 15px 0px 49px;
-    margin-left: 19px;
-}
-
-.filtre_bouton a {
-
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 0.8em;
-}
-
-.filtre_bouton:hover {
-
-    box-shadow: 0 0 11px rgba(33, 33, 33, 0.1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: auto;
+  border: 3px solid #f5f5f5;
+  border-radius: 100px 100px 100px 100px;
+  padding: 0px 15px 0px 49px;
+  margin-left: 19px;
 }
 
 .filtre_logo {
-
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: -3px;
-    height: 38px;
-    width: 38px;
-    border-radius: 50%;
-    background-color: #deebff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -3px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: #deebff;
 }
 
 .filtre_logo i {
+  color: #0065fc;
+}
 
-    color: #0065FC;
+#filtre p {
+  color: black;
+}
+
+.filtre_p {
+  font-size: 1em;
+}
+
+.filtre_bouton p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.filtre_bouton:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.1);
+}
+
+.filtre_bouton:hover a {
+  color: #0065fc;
+}
+
+.filtre_bouton:hover > .filtre_logo {
+  background-color: #0065fc;
+}
+
+.filtre_bouton:hover > .filtre_logo i {
+  color: white;
 }
 
 #info {
-
-    display: flex;
-    align-items: center;
-    margin-top: 9px;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
 }
 
 #info p {
-
-    padding-left: 8px;
+  margin-left: 8px;
 }
 
 .info_logo {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 52%;
-    height: 15px;
-    width: 15px;
-    border: 2px solid #e6e5e5;
-    border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52%;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #e6e5e5;
+  border-radius: 50%;
 }
 
 .info_logo i {
-
-    color: #0065FC;
+  color: #0065fc;
 }
 
+/***************** Section vitrine *****************/
 
-
-/* Section hebergement */
-
-
-
-#hebergement {
-
-    margin-top: 15px;
+#vitrine {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }
+
+#vitrine p {
+  font-size: 0.6em;
+}
+/************* Hébergement à Marseille *************/
 
 #hebergement_marseille {
-
-    display: block;
-    justify-content: space-between;
-    width: 60%;
-    background-color: #f5f5f5;
-    padding: 20px 30px 20px 30px;
-    border-radius: 15px 15px 15px 15px;
+  width: 60%;
+  height: 400px;
+  background-color: #f5f5f5;
+  padding: 20px 30px 20px 30px;
+  border-radius: 15px 15px 15px 15px;
 }
 
-#hm_vignette {
-
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    justify-content: center;
-    grid-gap: 18px;
-
+.hebergement_marseille_titre {
+  margin-bottom: -20px;
 }
 
-.hm_hotel {
-
-    display: flex;
-    flex-direction: column;
-    padding: 4px 4px 4px 4px;
-    height: 96%;
-    width: 93%;
-    background-color: white;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+#card_hebergement_marseille {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.hm_hotel img {
-
-    height: 87px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+.card {
+  border: 4px solid white;
+  width: 29%;
+  height: 130px;
+  margin: 24px 26px 0 0;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
-.hm_hotel h1 {
-
-    margin: 8px 0px -4px 6px;
-    font-size: 0.7em;
+#card_hebergement_marseille :nth-of-type(3),
+#card_hebergement_marseille :nth-of-type(6) {
+  margin-right: 0;
+}
+.scale:hover {
+  transform: scale(1.08);
 }
 
-.hm_prix {
-
-    display: flex;
-    align-items: center;
-    margin: -2px 0px -14px 6px;
+.card a {
+  color: black;
 }
 
-.hm_prix_en_gras {
-
-    font-weight: 600;
-    font-size: 0.7em;
-    margin-left: 3px;
+.card_image {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+  height: 77px;
+  width: 100%;
 }
 
-.hm_prix_en_gras_2 {
-
-    font-weight: 600;
-    font-size: 0.7em;
+.card_image img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
-.hm_etoile {
-
-    display: flex;
-    margin-left: 15px;
-    color: #0065FC;
+.card_image_un img {
+  top: -18px;
 }
 
-.etoile_vide {
-
-    color: #d4d3d3;
+.card_image_deux img {
+  top: -22px;
 }
 
-.hm_hotel i {
+.card_image_trois img {
+  top: -19px;
+}
 
-    font-size: 53%;
-    margin: 10px 0px -4px -10px;
-    padding-right: 11px;
+.card_image_quatre img {
+  top: -44px;
+}
+
+.card_image_cinq img {
+  top: -12px;
+}
+
+.card_image_six img {
+  top: -91px;
+}
+
+.card_titre {
+  margin: -3px 0px -4px 6px;
+}
+
+.card_prix {
+  display: flex;
+  align-items: center;
+  margin: -14px 0px -14px 6px;
+}
+
+.card_prix_en_gras {
+  font-weight: 600;
+  font-size: 0.7em;
+  margin-left: 3px;
+}
+
+.card_prix_en_gras_2 {
+  font-weight: 600;
+  font-size: 0.7em;
+}
+
+.card_etoile {
+  display: flex;
+  margin-left: 16px;
+}
+
+.card i,
+.card_lpp i {
+  font-size: 53%;
+  margin: 10px 0px -4px -10px;
+  padding-right: 11px;
+}
+
+.card_etoile_bleu {
+  color: #0065fc;
+}
+
+.card_etoile_grise {
+  color: #d4d3d3;
 }
 
 .afficher_plus {
-
-    margin-top: 28px;
-    margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 .afficher_plus a {
+  font-weight: bold;
+  color: black;
+  font-size: 0.8em;
+}
 
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 0.8em;
+.afficher_plus a:hover {
+  color: #0065fc;
+}
+
+/***** Les plus populaires *****/
+
+#les_plus_populaires {
+  width: 25%;
+  height: 400px;
+  background-color: #f5f5f5;
+  padding: 20px 30px 20px 30px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.les_plus_populaires_titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.les_plus_populaires_titre a:hover {
+  color: #0065fc;
+}
+
+.card_les_plus_populaires {
+  margin-top: -16px;
+}
+
+.card_lpp {
+  border: 4px solid white;
+  width: 238px;
+  height: 92px;
+  margin: 24px 26px 0 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.card_lpp_disposition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card_lpp_disposition img {
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  width: 97px;
+  height: 92px;
+}
+
+.card_lpp_body {
+  padding-right: 10px;
+  margin-left: 9px;
+  margin-bottom: 10px;
+}
+
+.card_lpp_etoile {
+  display: flex;
+  position: relative;
+  bottom: -26px;
+  margin-left: 16px;
 }
