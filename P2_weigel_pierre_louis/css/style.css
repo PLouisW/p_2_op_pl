@@ -40,7 +40,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
 }
 
 .logo_booki {
@@ -81,6 +80,10 @@ nav a:hover {
 
 /***************** Section acceuil *****************/
 
+#acceuil {
+  margin: 25px 0 0 0;
+}
+
 #acceuil h1 {
   margin-bottom: -12px;
 }
@@ -98,8 +101,7 @@ nav a:hover {
   height: 64px;
   width: 65px;
   background-color: #f5f5f5;
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 18px;
+  border-radius: 18px 0 0 18px;
 }
 
 .bdr_map i {
@@ -107,11 +109,11 @@ nav a:hover {
 }
 
 .bdr_localisation {
-  font-size: 1.4em;
-  padding-left: 21px;
+  border: 2px solid #f5f5f5;
   height: 58px;
   width: 284px;
-  border: 2px solid #f5f5f5;
+  font-size: 1.4em;
+  padding-left: 21px;
 }
 
 .bdr_localisation::placeholder {
@@ -122,8 +124,8 @@ nav a:hover {
 
 .bdr_localisation:focus,
 .bdr_localisation:hover {
-  outline: none;
   border: 2px solid #e0e0e0;
+  outline: none;
 }
 
 .bdr_rechercher {
@@ -133,8 +135,7 @@ nav a:hover {
   height: 64px;
   width: 174px;
   background-color: #0065fc;
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-radius: 0 18px 18px 0;
 }
 
 .bdr_rechercher a {
@@ -159,26 +160,26 @@ nav a:hover {
 }
 
 .filtre_bouton {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  border: 3px solid #e0e0e0;
   height: 60px;
   width: auto;
-  border: 3px solid #e0e0e0;
   border-radius: 100px;
   padding: 0px 26px 0px 82px;
   margin-left: 33px;
 }
 
 .filtre_logo {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: -3px;
+  position: absolute;
   height: 66px;
   width: 66px;
+  left: -3px;
   border-radius: 50%;
   background-color: #deebff;
 }
@@ -253,9 +254,9 @@ nav a:hover {
 /************* Hébergement à Marseille *************/
 
 #hebergement_marseille {
+  background-color: #f5f5f5;
   width: 65.5%;
   height: 828px;
-  background-color: #f5f5f5;
   border-radius: 22px;
 }
 
@@ -271,33 +272,23 @@ nav a:hover {
 }
 
 .card {
+  background-color: white;
   border: 6px solid white;
   width: 29.5%;
   height: 259px;
-  margin: 38px 26px 0 0;
-  background-color: white;
+  margin: 38px 0 0 0;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(33, 33, 33, 0.15);
-}
-
-#card_hebergement_marseille :nth-of-type(3),
-#card_hebergement_marseille :nth-of-type(6) {
-  margin-right: 0;
 }
 
 .scale:hover {
   transform: scale(1.08);
 }
 
-.card a {
-  color: black;
-}
-
 .card_image {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  overflow: hidden;
+  border-radius: 15px 15px 0 0;
   height: 154px;
+  overflow: hidden;
 }
 
 .card_image img {
@@ -305,27 +296,27 @@ nav a:hover {
   width: 100%;
 }
 
-.card_image_un img {
+.card_image_1 img {
   top: -32px;
 }
 
-.card_image_deux img {
+.card_image_2 img {
   top: -26px;
 }
 
-.card_image_trois img {
+.card_image_3 img {
   top: -26px;
 }
 
-.card_image_quatre img {
+.card_image_4 img {
   top: -68px;
 }
 
-.card_image_cinq img {
+.card_image_5 img {
   top: -9px;
 }
 
-.card_image_six img {
+.card_image_6 img {
   top: -158px;
 }
 
@@ -380,7 +371,6 @@ nav a:hover {
 
 .afficher_plus a {
   font-weight: bold;
-  color: black;
   font-size: 1.5em;
 }
 
@@ -388,12 +378,12 @@ nav a:hover {
   color: #0065fc;
 }
 
-/***** Les plus populaires *****/
+/*************** Les plus populaires ***************/
 
 #les_plus_populaires {
+  background-color: #f5f5f5;
   width: 31.5%;
   height: 828px;
-  background-color: #f5f5f5;
   border-radius: 22px;
 }
 
@@ -416,25 +406,22 @@ nav a:hover {
 }
 
 .card_les_plus_populaires {
-  display: flex;
-  flex-direction: column;
   margin-top: -20px;
 }
 
 .card_lpp {
+  background-color: white;
   border: 6px solid white;
   box-sizing: border-box;
   width: 100%;
   height: 193px;
   margin: 43px 0 0 0;
-  background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(33, 33, 33, 0.15);
 }
 
 .card_lpp_disposition {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -453,8 +440,8 @@ nav a:hover {
 .card_lpp_etoile {
   display: flex;
   position: relative;
-  bottom: -50px;
   margin-left: 16px;
+  bottom: -50px;
 }
 
 /************** Activités à Marseille **************/
@@ -468,9 +455,9 @@ nav a:hover {
   flex-flow: wrap column;
   justify-content: space-between;
   align-content: space-between;
-  margin: 30px 0 0 0;
   width: 100%;
   height: 601px;
+  margin: 30px 0 0 0;
 }
 
 .card_am {
@@ -481,59 +468,59 @@ nav a:hover {
 
 .card_am img {
   object-fit: cover;
-  border-radius: 15px 15px 0 0;
   width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
-.card_am_image {
+.card_am_grande_image {
+  height: 528px;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
-  height: 528px;
 }
 
-.card_am_un {
+.card_am_1 {
   height: 601px;
 }
 
-.card_am_un img {
+.card_am_1 img {
   width: 230%;
   position: relative;
   bottom: 19px;
   right: 281px;
 }
 
-.card_am_deux {
+.card_am_2 {
   height: 318px;
 }
 
-.card_am_deux img {
+.card_am_2 img {
   height: 240px;
   object-position: 0px -148px;
 }
 
-.card_am_trois {
+.card_am_3 {
   height: 224px;
 }
 
-.card_am_trois img {
+.card_am_3 img {
   height: 148px;
   object-position: 0px -23px;
 }
 
-.card_am_quatre {
+.card_am_4 {
   height: 263px;
 }
 
-.card_am_quatre img {
+.card_am_4 img {
   height: 188px;
   object-position: 0px 0px;
 }
 
-.card_am_cinq {
+.card_am_5 {
   height: 283px;
 }
 
-.card_am_cinq img {
+.card_am_5 img {
   height: 205px;
   object-position: 0px -14px;
 }
@@ -558,4 +545,41 @@ footer nav {
 footer li {
   font-size: 1.3em;
   margin: 17px 0 0 0;
+}
+
+/*************** Grande résolution ***************/
+
+@media screen and (min-width: 2100px) {
+  #bloc_page {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  #bloc_page {
+    width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  #bloc_page {
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  #bloc_page {
+    width: 55%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 3800px) {
+  #bloc_page {
+    width: 45%;
+    margin: auto;
+  }
 }
