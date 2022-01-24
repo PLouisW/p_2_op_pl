@@ -1,0 +1,46 @@
+/**************** Max-width: 576px ****************/
+
+#bloc_page {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.35em;
+}
+
+.logo_booki p {
+  font-size: 1.5em;
+}
+
+.bdr_localisation {
+  font-size: 1.65em;
+  width: 335px;
+}
+
+.filtre_p {
+  font-size: 1.65em;
+}
+
+.bdr_map {
+  border-radius: 23px 0 0 23px;
+}
+
+.bdr_search {
+  width: 73px;
+  border-radius: 23px;
+  margin: 0px 0px 0 -34px;
+}
+
+.filtre_bouton {
+  margin: 15px 0 0 17px;
+  height: 66px;
+}
+
+.filtre_logo {
+  height: 72px;
+  width: 72px;
+}

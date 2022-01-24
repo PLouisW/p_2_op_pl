@@ -1,0 +1,73 @@
+/**************** Max-width: 1700px ****************/
+
+#vitrine {
+  flex-direction: column-reverse;
+}
+
+#hebergement_marseille {
+  width: 100%;
+  margin: 81px 0 0 0;
+}
+
+#les_plus_populaires {
+  width: 100%;
+}
+
+.les_plus_populaires_body {
+  margin: 20px 52px 60px 52px;
+}
+
+.card_hebergement_marseille {
+  justify-content: center;
+}
+
+.card_les_plus_populaires {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  min-width: 308px;
+  max-width: 308px;
+  margin: 38px 20px 0 20px;
+}
+
+.card_lpp,
+.card_am {
+  min-width: 400px;
+  max-width: 400px;
+  margin: 38px 20px 0 20px;
+}
+
+.card_activites {
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card_am {
+  height: 320px;
+}
+
+.card_am img {
+  height: 240px;
+}
+
+.card_am_1 img {
+  width: 134%;
+  object-position: -67px 65%;
+}
+
+@media screen and (max-width: 1358px) {
+  #filtre {
+    display: block;
+  }
+  .filtre_ensemble_de_boutons {
+    flex-wrap: wrap;
+    margin: 0 0 0 -36px;
+  }
+  .filtre_bouton {
+    margin: 15px 0 0 33px;
+  }
+}

@@ -43,12 +43,16 @@ header {
 }
 
 .logo_booki {
-  margin: 40px 0 0 23px;
+  margin: 40px 0 0 71px;
 }
 
 .logo_booki img {
   width: 65%;
   object-fit: cover;
+}
+
+.nav_header {
+  margin: 0 47px 0 0;
 }
 
 .nav_header ul {
@@ -91,7 +95,7 @@ nav a:hover {
 #barre_de_recherche {
   display: flex;
   align-items: center;
-  margin-top: 27px;
+  margin: 27px 0 0 0;
 }
 
 .bdr_map {
@@ -128,24 +132,32 @@ nav a:hover {
   outline: none;
 }
 
-.bdr_rechercher {
+.bdr_search {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
   height: 64px;
   width: 174px;
   background-color: #0065fc;
   border-radius: 0 18px 18px 0;
 }
 
-.bdr_rechercher a {
-  color: white;
-  font-size: 1.4em;
-  font-weight: bold;
+.bdr_rechercher {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
-.bdr_rechercher:hover {
+.bdr_search:hover {
   background-color: #00d9ff;
+}
+
+.bdr_icone_de_recherche {
+  display: none;
 }
 
 #filtre {
@@ -161,6 +173,7 @@ nav a:hover {
 
 .filtre_bouton {
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -169,7 +182,7 @@ nav a:hover {
   width: auto;
   border-radius: 100px;
   padding: 0px 26px 0px 82px;
-  margin-left: 33px;
+  margin: 0 0 0 33px;
 }
 
 .filtre_logo {
@@ -204,16 +217,16 @@ nav a:hover {
   font-weight: bold;
 }
 
+.filtre_bouton:hover {
+  background-color: #deebff;
+}
+
 .filtre_bouton:hover > .filtre_logo {
   background-color: #0065fc;
 }
 
 .filtre_bouton:hover > .filtre_logo i {
   color: white;
-}
-
-.filtre_bouton:hover > .filtre_categorie {
-  color: #0065fc;
 }
 
 #info {
@@ -256,7 +269,7 @@ nav a:hover {
 #hebergement_marseille {
   background-color: #f5f5f5;
   width: 65.5%;
-  height: 828px;
+  height: 100%;
   border-radius: 22px;
 }
 
@@ -264,7 +277,7 @@ nav a:hover {
   margin: 38px 52px 52px 52px;
 }
 
-#card_hebergement_marseille {
+.card_hebergement_marseille {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -285,53 +298,25 @@ nav a:hover {
   transform: scale(1.08);
 }
 
-.card_image {
-  border-radius: 15px 15px 0 0;
+.card img {
+  object-fit: cover;
   height: 154px;
-  overflow: hidden;
-}
-
-.card_image img {
-  position: relative;
   width: 100%;
-}
-
-.card_image_1 img {
-  top: -32px;
-}
-
-.card_image_2 img {
-  top: -26px;
-}
-
-.card_image_3 img {
-  top: -26px;
-}
-
-.card_image_4 img {
-  top: -68px;
-}
-
-.card_image_5 img {
-  top: -9px;
-}
-
-.card_image_6 img {
-  top: -158px;
+  border-radius: 15px 15px 0 0;
 }
 
 .card_body {
-  margin: 22px 0 0 0;
+  margin: 22px 0 0 11px;
 }
 
 .card_titre {
-  margin: -5px 0px -4px 6px;
+  margin: -8px 0px -4px 6px;
 }
 
 .card_prix {
   display: flex;
   align-items: center;
-  margin: -25px 0px -14px 6px;
+  margin: -27px 0px -14px 6px;
 }
 
 .card_prix_en_gras {
@@ -352,7 +337,7 @@ nav a:hover {
 
 .card i,
 .card_lpp i {
-  font-size: 94%;
+  font-size: 100%;
   margin: 8px 0px -4px -10px;
   padding-right: 11px;
 }
@@ -383,12 +368,12 @@ nav a:hover {
 #les_plus_populaires {
   background-color: #f5f5f5;
   width: 31.5%;
-  height: 828px;
+  height: 100%;
   border-radius: 22px;
 }
 
 .les_plus_populaires_body {
-  margin: 20px 52px 20px 52px;
+  margin: 20px 52px 45px 52px;
 }
 
 .les_plus_populaires_titre {
@@ -422,25 +407,36 @@ nav a:hover {
 
 .card_lpp_disposition {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .card_lpp img {
   object-fit: cover;
   border-radius: 15px 0 0 15px;
   width: 177px;
+  min-width: 177px;
   height: 181px;
 }
 
 .card_lpp_body {
   width: 228px;
-  margin: 0 32px 0 0;
+  margin: 0 0 0 18px;
+}
+
+.card_lpp_titre {
+  margin: -5px 0px -4px 0;
+}
+
+.card_lpp_prix {
+  display: flex;
+  align-items: center;
+  margin: -25px 0px -14px 0;
 }
 
 .card_lpp_etoile {
   display: flex;
   position: relative;
-  margin-left: 16px;
+  margin-left: 10px;
   bottom: -50px;
 }
 
@@ -472,21 +468,20 @@ nav a:hover {
   border-radius: 15px 15px 0 0;
 }
 
-.card_am_grande_image {
-  height: 528px;
-  overflow: hidden;
-  border-radius: 15px 15px 0 0;
+.card_am:hover {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.3);
 }
 
 .card_am_1 {
   height: 601px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
 }
 
 .card_am_1 img {
-  width: 230%;
-  position: relative;
-  bottom: 19px;
-  right: 281px;
+  width: 240%;
+  height: 525px;
+  object-position: -305px -45px;
 }
 
 .card_am_2 {
@@ -533,13 +528,14 @@ nav a:hover {
 
 footer {
   display: flex;
+  justify-content: space-evenly;
   background-color: #f5f5f5;
-  height: 291px;
+  height: 100%;
   margin: 83px 0 0 0;
 }
 
 footer nav {
-  margin: 37px 304px 0px 6px;
+  margin: 37px 0 30px -16%;
 }
 
 footer li {
